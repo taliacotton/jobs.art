@@ -1,0 +1,22 @@
+<a href="../jobs/new">
+  <div class="postButton"><%= link_to "Post a Listing", new_job_path %></div>
+</a>
+
+<%= form_tag(jobs_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<% if @recipes.blank? %>
+  <h4>There are no recipes containing the term <%= params[:search] %>.</h4>
+<% end %>
+
+<!-- <h1>Jobs</h1> -->
+<% @jobs.each do |job| %>
+  <div class="job">
+    <h2><%= link_to job.Title, job.Description %></h2>
+    <h3><%= job.Organization %></p>
+  </div>
+<% end %>
+
+<!-- <p><%= link_to "Add a job", new_job_path %></p> -->

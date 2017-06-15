@@ -1,0 +1,12 @@
+<a href="../jobs">
+  <div class="xOut"></div>
+</a>
+
+<%= simple_form_for @job do |form| %>
+  <%= form.input :Title, label: "Job title" %>
+  <%= form.input :Organization, label: "Your company" %>
+  <%= form.input :Location, label: "Where is it" %>
+  <%= form.input :Date, label: "Date" %>
+  <%= form.input :Description, label: "Describe the job" %>
+  <%= form.button :submit %>
+<% end %>

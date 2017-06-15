@@ -1,0 +1,46 @@
+// Place all the styles related to the jobs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  background: white;
+  color: black;
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  margin: 20px auto;
+  width: 500px;
+}
+
+h2{
+  font-size: 1.3rem;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+h3{
+  font-size: 1.3rem;
+  font-weight: normal;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.postButton{
+  background-color: #7B4AFF;
+  color: white;
+  font-size: 1.3rem;
+  // height: 20px;
+  // width: 100px;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  position:fixed;
+  right: 20px;
+  border-radius:20px;
+}
+
+.postButton a{
+  color:white;
+}

@@ -1,0 +1,39 @@
+// Place all the styles related to the jobs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  background: #7B4AFF;
+  color: white;
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  margin: 20px auto;
+  width: 500px;
+}
+a {
+  color: #efaaca;
+  text-decoration: none;
+}
+div.xOut{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    position: fixed;
+    right:0;
+}
+div.xOut:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274c";
+    font-size: 50px;
+    color: #FFF;
+    //line-height: 100px;
+    text-align: center;
+}
+
+div.xOut:after {
+    content: '\d7';
+}
